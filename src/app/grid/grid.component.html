@@ -1,0 +1,9 @@
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile>
+  	<list-item-view  (onSelected)="onSelected($event)"></list-item-view>
+  </mat-grid-tile>
+  <mat-grid-tile>
+  	<app-product-details [productName]="selectedProductOnList"></app-product-details>
+  </mat-grid-tile>
+ 
+</mat-grid-list>
